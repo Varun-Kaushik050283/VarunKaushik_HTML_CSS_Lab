@@ -1,0 +1,99 @@
+<!--
+3.	Create a gmail account creation form to take input from users as specified below. Take the below image as reference. 
+    a.	Use background image/video for the page and fix it
+    b.	On focusing input tags change background color to steal blue with opacity 0.35
+    c.	Add submit and reset buttons
+    d.	Add border to the form
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+  input{
+        width: 300px;
+        border: none;
+        background-color: whitesmoke;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    input:focus{
+
+      color: white;
+
+      /* background-color: steelblue; */
+
+      /* 0 -> fully transparent
+         1 -> fully opaque  
+      */
+      background-color: rgba(70, 130, 180, 0.35);
+    }
+
+    button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    background-color: chocolate;
+
+    border: none;
+    margin: 20px;
+  }
+
+    div{
+      position: absolute;
+      top: 15%;
+      left: 35%;
+      border: 1px solid white;
+      border-radius: 4px;
+
+      padding-left: 30px;
+      width: 350px;
+  }
+
+   video{
+       width: 100%;
+   }
+
+  </style>
+</head>
+<body>
+  <section id="block">
+    
+    <video autoplay muted loop>
+      <source src="./Background.mp4" type="video/mp4" />
+    </video>
+    <div>
+      <form action="" id="lab-form">
+        <h1>Create Gmail Account</h1>
+
+
+        <input type="text" title="name" placeholder="Full Name" required>
+        <br>
+        <input type="number" title="contact_no" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+        <br>
+        <input type="email" title="email" placeholder="Enter email id" required>
+        <br>
+
+        <button form="lab-form">Submit</button>
+        <button form="lab-form">Reset</button>
+        
+      </form>
+    </div>
+  </section>
+</body>
+
+
+
+
+</html>
